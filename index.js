@@ -4,7 +4,7 @@ let valid = true
 let words = []
 let file
 
-fetch('./valid-wordle-words.txt')
+fetch('/MushyPotato.github.io/valid-wordle-words.txt')
     .then(response => response.text())
     .then(data => {
         file = data.trim().split("\n");
