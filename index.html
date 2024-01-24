@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="hi">Hello, welcome to the Wordle Solver!</h1>
-    <p>This website is designed to give you good words based off your entered word.</p>
+    <h1 id="hi">Hello, welcome to the Word Finder!</h1>
+    <p>This website is designed to give you good words to use based off your entered word for a Wordle guess.</p>
     <p>Follow these rules when entering a word.</p>
     <ul>
         <li>Use a lowercase letter for correct ones in the right spot.</li>
@@ -20,8 +20,13 @@
 
     <button onclick = "click_func()">Enter Word</button>
 
+    <button onclick = "wrong_letters()">Wrong Letters</button>
+
+    <p id="button2"></p>
+
     <p id="button"></p>
 
     <script src="index.js"></script>
+
 </body>
 </html>
