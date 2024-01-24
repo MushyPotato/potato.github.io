@@ -12,6 +12,8 @@ fetch('./valid-wordle-words.txt')
     .catch(error => console.error('Error fetching file:', error));
 
 function word_reader() {
+    valid = true
+    words = []
     console.log(input);
     if (!file) {
         console.error('Word list file not loaded')
@@ -53,6 +55,19 @@ function word_reader() {
     }
 }
 
+function click_func() {
+    let word = prompt("Please enter the word", "word");
+    input = word
+    word_reader()
+}
+
+function wrong_letters() {
+    let word = prompt("Please enter the incorrect characters", "letters");
+    for (i = 0; i < word.length; i++) {
+        wrong_chars.push(word.charAt(i))
+    }
+    document.getElementById("button2").innerHTML = wrong_chars;
+}
 function click_func() {
     let word = prompt("Please enter the word", "Word");
     input = word
